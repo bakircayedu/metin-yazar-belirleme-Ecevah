@@ -20,8 +20,9 @@ namespace MetinYazarıBulma_AhmetEcevit
         public string Output2 { get; set; }
         public string Fav { get; set; }
         public string pattern = @"\W(?=\s)(?= )|(?<=[ ])\W+|'\w+(?= )";
-        public string fat = @"[\.!\?]";
-        public string bat = @"(?<=[\.!\?])\s+";
+        public string punctuation = @"[\.!\?]";
+        public string punctuation1 = @"(?<=[\.!\?])\s+";
+        public string punctuation2 = @"\W(?=\s)|(?<=[ ])\W+|'\w+";
         public void Calculation()
         {
             average = tWord / tSentence;

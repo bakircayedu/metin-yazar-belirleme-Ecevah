@@ -48,7 +48,7 @@ namespace MetinYazarıBulma_AhmetEcevit
         private void btnStack_Click(object sender, EventArgs e)
         {
             Stack sentenceStack = new Stack();
-            setting.sentences = Regex.Split(setting.tempText, setting.bat);
+            setting.sentences = Regex.Split(setting.tempText, setting.punctuation1);
             int sentenceNumber = setting.sentences.Length;
 
 
@@ -84,7 +84,7 @@ namespace MetinYazarıBulma_AhmetEcevit
 
         private void btnTree_Click(object sender, EventArgs e)
         {
-            setting.rafinedWord = Regex.Replace(setting.tempText, setting.fat, " ");
+            setting.rafinedWord = Regex.Replace(setting.tempText, setting.punctuation, " ");
             setting.rafinedWord = Regex.Replace(setting.rafinedWord, setting.pattern, "").ToLower();
             string[] words = setting.rafinedWord.Split(' ');
 
@@ -119,7 +119,7 @@ namespace MetinYazarıBulma_AhmetEcevit
         
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            string searchWord = Regex.Replace(txtSearch.Text, @"\W(?=\s)|(?<=[ ])\W+|'\w+", "").ToLower();
+            string searchWord = Regex.Replace(txtSearch.Text, this.setting.punctuation2, "").ToLower();
             Setting setting = HashMap.Search(searchWord);
             lblWord.Text = "Kelime: " + setting.usedWord;
             lblNumber.Text = "Kullanım Sayısı: " + setting.usedWordNumber.ToString();
