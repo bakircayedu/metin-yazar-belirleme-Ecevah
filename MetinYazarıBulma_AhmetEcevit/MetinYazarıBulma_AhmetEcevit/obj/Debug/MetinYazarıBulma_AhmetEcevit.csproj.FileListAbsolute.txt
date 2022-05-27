@@ -1,0 +1,11 @@
+C:\Users\User\Desktop\MetinYazarıBulma_AhmetEcevit\MetinYazarıBulma_AhmetEcevit\bin\Debug\MetinYazarıBulma_AhmetEcevit.exe.config
+C:\Users\User\Desktop\MetinYazarıBulma_AhmetEcevit\MetinYazarıBulma_AhmetEcevit\bin\Debug\MetinYazarıBulma_AhmetEcevit.exe
+C:\Users\User\Desktop\MetinYazarıBulma_AhmetEcevit\MetinYazarıBulma_AhmetEcevit\bin\Debug\MetinYazarıBulma_AhmetEcevit.pdb
+C:\Users\User\Desktop\MetinYazarıBulma_AhmetEcevit\MetinYazarıBulma_AhmetEcevit\obj\Debug\MetinYazarıBulma_AhmetEcevit.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\MetinYazarıBulma_AhmetEcevit\MetinYazarıBulma_AhmetEcevit\obj\Debug\MetinYazarıBulma_AhmetEcevit.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\Desktop\MetinYazarıBulma_AhmetEcevit\MetinYazarıBulma_AhmetEcevit\obj\Debug\MetinYazarıBulma_AhmetEcevit.frmVeriYapilari.resources
+C:\Users\User\Desktop\MetinYazarıBulma_AhmetEcevit\MetinYazarıBulma_AhmetEcevit\obj\Debug\MetinYazarıBulma_AhmetEcevit.Properties.Resources.resources
+C:\Users\User\Desktop\MetinYazarıBulma_AhmetEcevit\MetinYazarıBulma_AhmetEcevit\obj\Debug\MetinYazarıBulma_AhmetEcevit.csproj.GenerateResource.cache
+C:\Users\User\Desktop\MetinYazarıBulma_AhmetEcevit\MetinYazarıBulma_AhmetEcevit\obj\Debug\MetinYazarıBulma_AhmetEcevit.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\MetinYazarıBulma_AhmetEcevit\MetinYazarıBulma_AhmetEcevit\obj\Debug\MetinYazarıBulma_AhmetEcevit.exe
+C:\Users\User\Desktop\MetinYazarıBulma_AhmetEcevit\MetinYazarıBulma_AhmetEcevit\obj\Debug\MetinYazarıBulma_AhmetEcevit.pdb
