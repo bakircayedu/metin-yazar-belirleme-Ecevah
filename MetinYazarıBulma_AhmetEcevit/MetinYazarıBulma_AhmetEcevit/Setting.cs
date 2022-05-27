@@ -19,6 +19,9 @@ namespace MetinYazarıBulma_AhmetEcevit
         public string Output { get; set; }
         public string Output2 { get; set; }
         public string Fav { get; set; }
+        public string pattern = @"\W(?=\s)(?= )|(?<=[ ])\W+|'\w+(?= )";
+        public string fat = @"[\.!\?]";
+        public string bat = @"(?<=[\.!\?])\s+";
         public void Calculation()
         {
             average = tWord / tSentence;

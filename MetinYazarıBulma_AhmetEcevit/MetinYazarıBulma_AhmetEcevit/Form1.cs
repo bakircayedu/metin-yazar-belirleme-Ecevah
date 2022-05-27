@@ -48,7 +48,7 @@ namespace MetinYazarıBulma_AhmetEcevit
         private void btnStack_Click(object sender, EventArgs e)
         {
             Stack sentenceStack = new Stack();
-            setting.sentences = Regex.Split(setting.tempText, @"(?<=[\.!\?])\s+");
+            setting.sentences = Regex.Split(setting.tempText, setting.bat);
             int sentenceNumber = setting.sentences.Length;
 
 
@@ -73,29 +73,24 @@ namespace MetinYazarıBulma_AhmetEcevit
                 Sentence tempSentence = (Sentence)temp.Peek();
                 setting.tWord += tempSentence.wordNumber;
                 setting.tSentence++;
-
                 sentenceStack.Push(temp.Pop());
             }
             setting.Calculation();
             setting.output2(setting.tWord, setting.tSentence, setting.average);
             lbSentence.Items.Add(setting.Output2);
-
             btnStack.Enabled = false;
             btnTree.Enabled = true;
         }
 
         private void btnTree_Click(object sender, EventArgs e)
         {
-            setting.rafinedWord = Regex.Replace(setting.tempText, @"[\.!\?]", " ");
-            string pattern = @"\W(?=\s)(?= )|(?<=[ ])\W+|'\w+(?= )";
-            setting.rafinedWord = Regex.Replace(setting.rafinedWord, pattern, "").ToLower();
+            setting.rafinedWord = Regex.Replace(setting.tempText, setting.fat, " ");
+            setting.rafinedWord = Regex.Replace(setting.rafinedWord, setting.pattern, "").ToLower();
             string[] words = setting.rafinedWord.Split(' ');
 
             heap = new Heap(words.Length);
             for (int i = 0; i < words.Length; i++)
-            {
                 heap.Add(words[i]);
-            }
 
             btnTree.Enabled = false;
             btnFav.Enabled = true;
@@ -104,9 +99,7 @@ namespace MetinYazarıBulma_AhmetEcevit
         private void btnFav_Click(object sender, EventArgs e)
         {
             words = heap.Sort();
-            foreach (var fav in words)
-            {
-
+            foreach (var fav in words) {
                 setting.FavF(fav.wordNumber, fav.word);
                 lbWord.Items.Add(setting.Fav);
             }
@@ -118,9 +111,7 @@ namespace MetinYazarıBulma_AhmetEcevit
         {
             HashMap hash = new HashMap(words.Length);
             foreach (var item in words)
-            {
                 hash.Add(item.word, item);
-            }
 
             btnHash.Enabled=false;
             btnFile.Enabled = true;

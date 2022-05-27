@@ -15,9 +15,7 @@ namespace MetinYazarıBulma_AhmetEcevit
             size = Size;
             Hash = new HashEntry[Size];
             for (int i = 0; i < Size; i++)
-            {
                 Hash[i] = null;
-            }
         }
         public Setting Search(string key)
         {
@@ -26,13 +24,9 @@ namespace MetinYazarıBulma_AhmetEcevit
             {
                 HashEntry Node = Hash[hash];
                 while (Node.Next != null && Node.key != key)
-                {
                     Node = Node.Next;
-                }
                 if (Node.key != key)
-                {
                     return null;
-                }
                 return (Setting)Node.value;
             }
             else
@@ -45,9 +39,7 @@ namespace MetinYazarıBulma_AhmetEcevit
             {
                 HashEntry Node = Hash[hash];
                 while (Node.Next != null)
-                {
                     Node = Node.Next;
-                }
                 Node.Next = new HashEntry(key, value);
             }
             else
@@ -57,9 +49,7 @@ namespace MetinYazarıBulma_AhmetEcevit
         {
             int hashValue = 0;
             for (int i = 0; i < key.Length; i++)
-            {
                 hashValue += key[i];
-            }
             return hashValue;
         }
     }
